@@ -40,7 +40,7 @@ while True:
         response = requests.post(
             "https://api.aimlapi.com/v1/chat/completions",
             headers={
-                "Authorization": "Bearer 7fc35c46bb8344698fc24145456c4760",
+                "Authorization": "Bearer <Your_API_Key>",
                 "Content-Type": "application/json"
             },
             json={
