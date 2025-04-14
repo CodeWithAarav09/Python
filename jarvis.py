@@ -14,7 +14,7 @@ import webbrowser
 
 r = sr.Recognizer()
 # engine = pyttsx3.init()
-newsapi = '2fb318336c8c47ce8d32d6ba188b7db7'
+newsapi = '<Your_news_API>'
 
 def aiProcess(command): 
     response = requests.post(
@@ -23,7 +23,7 @@ def aiProcess(command):
             "Content-Type":"application/json", 
 
             # Insert your AIML API Key instead of <YOUR_AIMLAPI_KEY>:
-            "Authorization":"Bearer 07308d90102d4dc3b398e3dfe4738f92",
+            "Authorization":"Bearer <Your API key>",
             "Content-Type":"application/json"
         },
         json={
