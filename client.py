@@ -1,15 +1,7 @@
 import requests
 
 command = '''
- [15:50, 08/04/2025] Aarav Garg: https://youtube.com/shorts/RkKueLd9L84?si=A8gAHEs5s4Q4pti-
-[16:53, 12/04/2025] Vipan Papa: Hi Aarav,
-Welcome to PW. Your registration no. is 22529247.
-Kindly fill out the ADMISSION FORM with a link attached to complete the procedure.
-https://erp.pw.live/Scholar/PWRegistrationForm?param=dovpsgdovjsxmxcdov
-
-Visit your PW center to complete your pending admission formalities and to complete the payment of your pending fee before classes start.
-
-Thanks,
+ your message history just for checking..
 '''
 response = requests.post(
     "https://api.aimlapi.com/v1/chat/completions",
@@ -17,7 +9,7 @@ response = requests.post(
         "Content-Type":"application/json", 
 
         # Insert your AIML API Key instead of <YOUR_AIMLAPI_KEY>:
-        "Authorization":"Bearer 07308d90102d4dc3b398e3dfe4738f92",
+        "Authorization":"Bearer <Your_API_key>",
         "Content-Type":"application/json"
     },
     json={
