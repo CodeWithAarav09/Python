@@ -4,7 +4,7 @@ import time
 import requests
 
 def is_last_message_from_sender(chat_text):
-    lines = [line.strip() for line in chat_text.strip().split('] ') if line.strip()]
+    lines = [line.strip() for line in chat_text.strip().split('\n') if line.strip()]
     
     # Find the last valid message line
     for line in reversed(lines):
