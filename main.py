@@ -48,7 +48,7 @@ while True:
                 "messages": [
                     {
                         "role": "system",
-                        "content": "You are a person named Aarav. You analyze the previous messages and respond like you're chatting. Output only the next message."
+                        "content": "You are a replying person with name <your_name> and reply to message of <sender>/ <describe your details.>"
                     },
                     {
                         "role": "user",
@@ -76,6 +76,6 @@ while True:
             print("No valid content in API response.")
 
     else:
-        print("Waiting for message from Mom...")
+        print("Waiting for message from sender...")
 
     time.sleep(5)
