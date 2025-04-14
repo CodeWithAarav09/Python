@@ -10,12 +10,12 @@ def is_last_message_from_sender(chat_text):
     for line in reversed(lines):
         if ': ' in line:
             sender = line.split(': ', 1)[0].strip()
-            return sender.lower() == 'mom'
+            return sender.lower() == <Your_sender_name>
     
     return False
 
 # Step 1: Click to open the chat area
-pyautogui.click(934, 1048)
+pyautogui.click(934, 1048) #my coordinates for the chat opening
 pyautogui.click(188, 30)
 
 # Give 3 seconds to prepare the screen
